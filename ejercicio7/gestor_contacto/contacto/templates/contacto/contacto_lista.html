@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <script src="{% static 'js/funciones.js' %}" defer></script>
+
+</head>
+<body>
+
+    <div class="container">
+        <h1>📋 Lista de Contactos</h1>
+
+        <div style="text-align: right;">
+            <a href="{% url 'contacto_agregar' %}" class="add-btn">➕ Agregar</a>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Celular</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contacto in contacto %}
+                <tr>
+                    <td>{{ contacto.nombre }}</td>
+                    <td>{{ contacto.apellido }}</td>
+                    <td>{{ contacto.celular }}</td>
+                    <td>
+                        <a href="{% url 'contacto_actualizar' pk=contacto.pk %}" class="btn btn-edit">✏️</a>
+                        <a href="{% url 'contacto_eliminar' pk=contacto.pk %}" class="btn btn-delete">🗑️</a>
+                    </td>
+                </tr>
+                {% empty %}
+                <tr>
+                    <td colspan="4" class="empty">No hay contactos</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

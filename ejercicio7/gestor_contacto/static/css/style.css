@@ -1,0 +1,149 @@
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+/* Botón Agregar */
+.add-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    background: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.add-btn:hover {
+    background: #218838;
+}
+
+/* Tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+/* Botones */
+.btn {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 12px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-edit {
+    background-color: #007bff;
+}
+
+.btn-edit:hover {
+    background-color: #0056b3;
+}
+
+.btn-delete {
+    background-color: #dc3545;
+}
+
+.btn-delete:hover {
+    background-color: #c82333;
+}
+
+/* Mensaje cuando no hay contactos */
+.empty {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+}
+
+
+.containerForm {
+    width: 400px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+/* Estilos del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 8px;
+    font-size: 14px;
+}
+
+input, textarea, select {
+    width: 95%;
+    padding: 5px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+/* Botón */
+button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+button:hover {
+    background: #0056b3;
+}
